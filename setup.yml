@@ -1,0 +1,14 @@
+#- name: first playbook
+#  hosts: dev
+#
+#  roles:
+#   - common
+
+- name: odoo playbook
+  hosts: odoo
+
+  roles:
+   - common
+   - postgresql
+   - odoo
+   - nginx
